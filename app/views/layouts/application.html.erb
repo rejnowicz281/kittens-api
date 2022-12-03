@@ -11,6 +11,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= link_to "Homepage", root_path %>
+      <%= link_to "Add kitten", new_kitten_path %>
+    </header>
+    <hr>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
