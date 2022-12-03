@@ -1,0 +1,4 @@
+<%= render "kitten", kitten: @kitten %>
+
+<%= link_to "Edit this kitten", edit_kitten_path %>
+<%= link_to "DESTROY THIS KITTEN.", kitten_path, data: {turbo_method: :delete, turbo_confirm: 'You are about to destroy a kitten.'} %>
